@@ -13,10 +13,6 @@ export class AppComponent {
 
   openDialog() {
     const dialogRef = this.matDialog.open(RegisterDialog);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
   }
 
 }

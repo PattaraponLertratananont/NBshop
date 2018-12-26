@@ -29,7 +29,9 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     RegisterDialog,
     SlideshowComponent,
   ],
-  entryComponents:[RegisterDialog],
+  entryComponents:[
+    RegisterDialog,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
