@@ -9,6 +9,8 @@ import { NotebookComponent } from './notebook/notebook.component';
 import { UltrabookComponent } from './ultrabook/ultrabook.component';
 import { GamingbookComponent } from './gamingbook/gamingbook.component';
 import { HybridComponent } from './hybrid/hybrid.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { HybridComponent } from './hybrid/hybrid.component';
     NotebookComponent,
     UltrabookComponent,
     GamingbookComponent,
-    HybridComponent
+    HybridComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
