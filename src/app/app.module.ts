@@ -14,6 +14,7 @@ import { GamingbookComponent } from './gamingbook/gamingbook.component';
 import { HybridComponent } from './hybrid/hybrid.component';
 import { ContactComponent } from './contact/contact.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     HybridComponent,
     ContactComponent,
     RegisterDialog,
+    SlideshowComponent,
   ],
   entryComponents:[RegisterDialog],
   imports: [
