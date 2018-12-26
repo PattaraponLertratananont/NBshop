@@ -5,7 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent, RegisterDialog } from './app.component';
 import { CompareComponent } from './compare/compare.component';
 import { CheckspecComponent } from './checkspec/checkspec.component';
 import { NotebookComponent } from './notebook/notebook.component';
@@ -13,6 +13,7 @@ import { UltrabookComponent } from './ultrabook/ultrabook.component';
 import { GamingbookComponent } from './gamingbook/gamingbook.component';
 import { HybridComponent } from './hybrid/hybrid.component';
 import { ContactComponent } from './contact/contact.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,16 @@ import { ContactComponent } from './contact/contact.component';
     GamingbookComponent,
     HybridComponent,
     ContactComponent,
+    RegisterDialog,
   ],
+  entryComponents:[RegisterDialog],
   imports: [
     BrowserModule,
     AppRoutingModule,
     [BrowserAnimationsModule],
     [NoopAnimationsModule],
     NgbModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

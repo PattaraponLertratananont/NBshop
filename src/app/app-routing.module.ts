@@ -6,6 +6,7 @@ import { NotebookComponent } from './notebook/notebook.component'
 import { UltrabookComponent } from './ultrabook/ultrabook.component'
 import { GamingbookComponent } from './gamingbook/gamingbook.component'
 import { HybridComponent } from './hybrid/hybrid.component'
+import { ContactComponent } from './contact/contact.component'
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'category/hybrid',
     component: HybridComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
 ];
 
